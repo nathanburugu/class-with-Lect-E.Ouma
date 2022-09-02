@@ -69,12 +69,16 @@ tbody {
   margin-bottom:20px ;
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.24), rgba(34, 34, 34, 0.226));
   box-shadow: 0 20px 20px rgb(0 , 0, 0, 0.9);
+  
+  gap: 10px;
 }
 .blog .preview {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
+  background-color: yellow;
+  gap: 10px;
 }
 .blog .preview h3 {
   color: darkcyan;
@@ -91,5 +95,33 @@ tbody {
   margin-top: 10px;
   border-radius: 50px;
   
+}
+a {
+  text-decoration: none;
+}
+/* header styling */
+.header {
+  height: 24%;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.middle {
+  display: flex;
+  width: 38%;
+  justify-content: space-around;
+}
+.buttons {
+  display: flex;
+  width: 16%;
+  height: 100%;
+}
+.buttons .in, .buttons .up {
+    width: 100%;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 0.5rem;
+    background-image: linear-gradient(to right, rgba(143, 197, 184, 0.336), rgba(43, 209, 201, 0.219));
 }
 
