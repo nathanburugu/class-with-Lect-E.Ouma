@@ -1,10 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Comfortaa', cursive;
 }
 
 code {
@@ -33,7 +30,7 @@ margin-left: 650px;
   width: 10%;
   height: 40px;
   margin-left: 5px;
-  background-color: aquamarine;
+  background-color: #A1A7C8;
   border-radius: 50px;
   transition: 1.1s;
 }
@@ -60,25 +57,54 @@ tbody {
   background-image: linear-gradient(to right, rgba(34, 34, 34, 0.068), rgba(43, 209, 173, 0.075));
 }
 .blog {
-  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+      background-image: url(../src/assets/img/centerWhite.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.blogy {
+  width: 96%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   margin-bottom:20px ;
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.24), rgba(34, 34, 34, 0.226));
   box-shadow: 0 20px 20px rgb(0 , 0, 0, 0.9);
+  background: linear-gradient(rgba(255, 255, 255, 0.658), rgba(34, 34, 34, 0.075));
   
   gap: 10px;
 }
-.blog .preview {
+.blog-list { 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.blog-list .preview {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
-  background-color: yellow;
-  gap: 10px;
+  justify-content: center;
+  width: 97%;
+  border-top: 1px solid rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(97, 93, 93, 0.3);
+  background-image: linear-gradient(#6b9fed15, #24f9f918);
+  backdrop-filter: blur(5px);
+  transition: 0.7s;
+}
+.blog-list .preview:hover {
+   width: 99.5%;
+  border-radius: 17px;
+  box-shadow: 0 20px 20px rgba(97, 93, 93, 0.9);
+
 }
 .blog .preview h3 {
   color: darkcyan;
@@ -102,26 +128,54 @@ a {
 /* header styling */
 .header {
   height: 24%;
-  background-color: lightcoral;
+  background-image: linear-gradient(#6B9FED, #24F9f9);
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .middle {
   display: flex;
-  width: 38%;
+  width: 50%;
   justify-content: space-around;
+  gap: 5px;
+}
+.middle > div {
+  width: 20%;
+  padding: 0.4rem;
+  border-radius:8px 0  8px 0 ;
+  text-align: center;
+  transition: 1.1s;
+}
+.middle > div:hover {
+  background-color: #A1A7C8;
+}
+.middle > div a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
 }
 .buttons {
   display: flex;
-  width: 16%;
+  width: 20%;
   height: 100%;
 }
 .buttons .in, .buttons .up {
     width: 100%;
     border-radius: 50px;
     margin: 10px;
-    padding: 0.5rem;
-    background-image: linear-gradient(to right, rgba(143, 197, 184, 0.336), rgba(43, 209, 201, 0.219));
+    padding: 0.7rem;
+    background: linear-gradient( #A1A7C8, #6B9FED );
+    border: none;
+    box-shadow: 0 20px 20px rgba(97, 93, 93, 0.9);
+    color: #222;
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    transition: 0.13s;
+}
+.buttons .in:hover, .buttons .up:hover {
+     padding: 0.5rem;
+    border-radius: 55px;
+    box-shadow: 0 20px 20px rgba(97, 93, 93, 0.2);
 }
 

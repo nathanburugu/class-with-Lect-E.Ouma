@@ -36,9 +36,11 @@ useEffect(()=>{
 
   return (
         <div className="blog">
-            {error && <div>{error}</div>}
-            {myBlogs && <BlogList blog={myBlogs}/>}
-            {loading && <div>Loading...</div>}
+            <div className="blogy">
+                {error && <div>{error}</div>}
+                {myBlogs && <BlogList blog={myBlogs}/>}
+                {loading && <div>Loading...</div>}
+            </div>
         </div>
       
   )
