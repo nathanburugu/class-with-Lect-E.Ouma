@@ -1,5 +1,6 @@
 import  Header  from './components/Header';
 import Blogs from './components/Blogs';
+import Footer from './components/Footer';
 
 function App() {
   // const inputRef = useRef(null);
@@ -14,6 +15,7 @@ function App() {
     <div className='meza'>
       <Header/>
    <Blogs/>
+   <Footer/>
     </div>
   );
 }
